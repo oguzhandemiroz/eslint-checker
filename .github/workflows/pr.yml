@@ -20,8 +20,3 @@ jobs:
               run: yarn install
             # Lint
             - run: yarn lint
-
-            # Run ESLint using latest action
-            - uses: eslint/github-action@draft
-              env:
-                  ESLINT_DRAFT: 1
