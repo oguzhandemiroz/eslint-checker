@@ -14,9 +14,11 @@ jobs:
             # Install Node.js
             - uses: actions/setup-node@v1
               with:
-                  node-version: 12
-
+                  node-version: 16
             # Install your dependencies
+            - name: Install Packages
+              run: yarn install
+            # Lint
             - run: yarn lint
 
             # Run ESLint using latest action
