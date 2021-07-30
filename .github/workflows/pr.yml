@@ -15,8 +15,8 @@ jobs:
               with:
                   node-version: 16
             # Install your dependencies
-            - name: Get UNAME
-              run: uname
+            - name: Get LS
+              run: ls
             - name: Install Packages
               run: yarn add eslint@^7.31.0 eslint-plugin-react@^7.24.0
             # Lint
